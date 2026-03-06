@@ -1,0 +1,58 @@
+.dark-mode-toggle {
+  background: transparent;
+  border: 2px solid #667eea;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+.dark-mode-toggle:hover {
+  background: #667eea;
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle:hover .mode-icon {
+  color: white;
+}
+
+.mode-icon {
+  width: 24px;
+  height: 24px;
+  color: #667eea;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .dark-mode-toggle {
+  border-color: #fbbf24;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background: #fbbf24;
+}
+
+.dark-mode .mode-icon {
+  color: #fbbf24;
+}
+
+.dark-mode .dark-mode-toggle:hover .mode-icon {
+  color: #1f2937;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .dark-mode-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mode-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
